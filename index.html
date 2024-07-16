@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rummy</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="flex align-items-center justify-content-center p-5">
+                <img class="nav-logo" src="images/logo.png" alt="logo of rummy">
+            </div>
+            <button class="mobile-menu" id="mobileMenuButton">
+                <svg class="menu-icon" fill="none" height="512" viewBox="0 0 20 20" width="512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                        d="m3 5c0-.26522.10536-.51957.29289-.70711.18754-.18753.44189-.29289.70711-.29289h12c.2652 0 .5196.10536.7071.29289.1875.18754.2929.44189.2929.70711s-.1054.51957-.2929.70711c-.1875.18753-.4419.29289-.7071.29289h-12c-.26522 0-.51957-.10536-.70711-.29289-.18753-.18754-.29289-.44189-.29289-.70711zm0 5c0-.26522.10536-.51957.29289-.70711.18754-.18753.44189-.29289.70711-.29289h6c.2652 0 .5196.10536.7071.29289.1875.18754.2929.44189.2929.70711 0 .2652-.1054.5196-.2929.7071s-.4419.2929-.7071.2929h-6c-.26522 0-.51957-.1054-.70711-.2929-.18753-.1875-.29289-.4419-.29289-.7071zm0 5c0-.2652.10536-.5196.29289-.7071.18754-.1875.44189-.2929.70711-.2929h12c.2652 0 .5196.1054.7071.2929s.2929.4419.2929.7071-.1054.5196-.2929.7071-.4419.2929-.7071.2929h-12c-.26522 0-.51957-.1054-.70711-.2929-.18753-.1875-.29289-.4419-.29289-.7071z"
+                        fill="rgb(0,0,0)" fill-rule="evenodd" />
+                </svg>
+                <svg class="close-icon hidden" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
+                    width="512" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m292.2 256 109.9-109.9c10-10 10-26.2 0-36.2s-26.2-10-36.2 0l-109.9 109.9-109.9-109.9c-10-10-26.2-10-36.2 0s-10 26.2 0 36.2l109.9 109.9-109.9 109.9c-10 10-10 26.2 0 36.2 5 5 11.55 7.5 18.1 7.5s13.1-2.5 18.1-7.5l109.9-109.9 109.9 109.9c5 5 11.55 7.5 18.1 7.5s13.1-2.5 18.1-7.5c10-10 10-26.2 0-36.2z" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <nav class="second-nav">
+        <ul class="container list-unstyled flex align-items-center justify-content-center gap-10 p-4">
+            <li class="active">
+                <a>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a>
+                    Refunds/Cancellations
+                </a>
+            </li>
+            <li>
+                <a>
+                    Terms & Conditions
+                </a>
+            </li>
+            <li>
+                <a>
+                    Privacy Policy
+                </a>
+            </li>
+            <li>
+                <a>
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section class="banner">
+        <img src="images/banner.png" alt="banner of rummy">
+    </section>
+    <section class="about">
+        <div class="container flex justify-content-between ">
+            <div class="flex align-items-center gap-4 about-item p-3">
+                <h2>1</h2>
+                <div>
+                    <h3>Download the app</h3>
+                    <p>for free</p>
+                </div>
+            </div>
+            <div class="flex align-items-center gap-4 about-item p-3">
+                <h2>2</h2>
+                <div>
+                    <h3>Play the game</h3>
+                    <p>anywhere anytime</p>
+                </div>
+            </div>
+            <div class="flex align-items-center gap-4 about-item p-3">
+                <h2>3</h2>
+                <div>
+                    <h3>Withdraw the winnings</h3>
+                    <p>with no waiting time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="marquee">
+        <span>Attention! Users from Karnataka, Meghalaya, Andhra Pradesh, Assam, Odisha, Sikkim, Nagaland, Tamil Nadu,
+            Arunachal Pradesh, and Telangana, please Click Here!</span>
+    </div>
+    <div class="play-cards">
+        <div class="container gap-8">
+            <div class="play-card-items p-5">
+                <img src="images/icon1.png" alt="banner of rummy">
+                <h3>
+                    Play Rummy Online
+                </h3>
+                <p>
+                    Play the rummy anywhere and anytime, and playing it at home can easily fill your day.
+                </p>
+            </div>
+            <div class="play-card-items p-5">
+                <img src="images/icon2.png" alt="banner of rummy">
+                <h3>
+                    Play with Real Players
+                </h3>
+                <p>
+                    Challenge and beat real players, and you'll have a much better game experience.
+                </p>
+            </div>
+            <div class="play-card-items p-5">
+                <img src="images/icon3.png" alt="banner of rummy">
+                <h3>
+                    Earn Big Cash
+                </h3>
+                <p>
+                    Try your best to be the final winner, and reap the glory and big reward.
+                </p>
+            </div>
+            <div class="play-card-items p-5">
+                <img src="images/icon4.png" alt="banner of rummy">
+                <h3>
+                    Show Your Skills
+                </h3>
+                <p>
+                    Skill is the key to success in our rummy game, and it's time to show yours.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="feature p-8">
+            <h2>
+                Amazing Features of Selaman Rummy
+            </h2>
+            <div class="flex gap-8 feature-card">
+                <div class="feature-card-item">
+                    <img src="images/icon5.png" alt="banner of rummy">
+                    <h3>
+                        Instant Matching and Playing
+                    </h3>
+                    <p>
+                        You can quickly match active real players anytime and start playing rummy with no waiting time.
+                    </p>
+                    <a>
+                        More Details
+                    </a>
+                </div>
+                <div class="feature-card-item">
+                    <img src="images/icon5.png" alt="banner of rummy">
+                    <h3>
+                        Instant Matching and Playing
+                    </h3>
+                    <p>
+                        You can quickly match active real players anytime and start playing rummy with no waiting time.
+                    </p>
+                    <a>
+                        More Details
+                    </a>
+                </div>
+                <div class="feature-card-item">
+                    <img src="images/icon5.png" alt="banner of rummy">
+                    <h3>
+                        Instant Matching and Playing
+                    </h3>
+                    <p>
+                        You can quickly match active real players anytime and start playing rummy with no waiting time.
+                    </p>
+                    <a>
+                        More Details
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="online gap-6">
+            <div class="online-card p-4">
+                <img src="images/banner2.png" alt="banner" />
+                <h5>
+                    BEST STRATEGY TO WIN THE RUMMY
+                    </p>
+                    <h4>
+                        Play Selaman Rummy Online
+                    </h4>
+                    <p>
+                        Sign up and Get More Free Bonus Though you can play the game as a guest, you'll get more free
+                        bonus once you sign up...
+                    </p>
+                    <a>
+                        Read Now
+                    </a>
+            </div>
+            <div class="online-card p-4">
+                <img src="images/banner2.png" alt="banner" />
+                <h5>
+                    BEST STRATEGY TO WIN THE RUMMY
+                    </p>
+                    <h4>
+                        Play Selaman Rummy Online
+                    </h4>
+                    <p>
+                        Sign up and Get More Free Bonus Though you can play the game as a guest, you'll get more free
+                        bonus once you sign up...
+                    </p>
+                    <a>
+                        Read Now
+                    </a>
+            </div>
+        </section>
+        <section class="why">
+            <h2>
+                Why Do Players Love Selaman Rummy?
+            </h2>
+            <div class="why-card-wrapper gap-6">
+                <div class="why-card">
+                    <img src="images/banner3.png" alt="why rummy" />
+                    <h4>
+                        Earn Real Money
+                    </h4>
+                    <p>
+                        Players won't say no to a game where they can earn real money, and we're committed to making
+                        real money available to as many players as possible.
+                    </p>
+                </div>
+                <div class="why-card">
+                    <img src="images/banner3.png" alt="why rummy" />
+                    <h4>
+                        Earn Real Money
+                    </h4>
+                    <p>
+                        Players won't say no to a game where they can earn real money, and we're committed to making
+                        real money available to as many players as possible.
+                    </p>
+                </div>
+                <div class="why-card">
+                    <img src="images/banner3.png" alt="why rummy" />
+                    <h4>
+                        Earn Real Money
+                    </h4>
+                    <p>
+                        Players won't say no to a game where they can earn real money, and we're committed to making
+                        real money available to as many players as possible.
+                    </p>
+                </div>
+                <div class="why-card">
+                    <img src="images/banner3.png" alt="why rummy" />
+                    <h4>
+                        Earn Real Money
+                    </h4>
+                    <p>
+                        Players won't say no to a game where they can earn real money, and we're committed to making
+                        real money available to as many players as possible.
+                    </p>
+                </div>
+                <div class="why-card">
+                    <img src="images/banner3.png" alt="why rummy" />
+                    <h4>
+                        Earn Real Money
+                    </h4>
+                    <p>
+                        Players won't say no to a game where they can earn real money, and we're committed to making
+                        real money available to as many players as possible.
+                    </p>
+                </div>
+                <div class="why-card">
+                    <img src="images/banner3.png" alt="why rummy" />
+                    <h4>
+                        Earn Real Money
+                    </h4>
+                    <p>
+                        Players won't say no to a game where they can earn real money, and we're committed to making
+                        real money available to as many players as possible.
+                    </p>
+                </div>
+                <div class="why-card">
+                    <img src="images/banner3.png" alt="why rummy" />
+                    <h4>
+                        Earn Real Money
+                    </h4>
+                    <p>
+                        Players won't say no to a game where they can earn real money, and we're committed to making
+                        real money available to as many players as possible.
+                    </p>
+                </div>
+                <div class="why-card">
+                    <img src="images/banner3.png" alt="why rummy" />
+                    <h4>
+                        Earn Real Money
+                    </h4>
+                    <p>
+                        Players won't say no to a game where they can earn real money, and we're committed to making
+                        real money available to as many players as possible.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="game-review p-8">
+            <h2>
+                Game Reviews
+            </h2>
+            <div class="game-review-wrapper flex justify-content-center gap-8">
+                <div class="game-review-card">
+                    <div class="game-review-card-circle">
+                        <p>
+                            This game deserves five stars, because I won a lot of money these days, about Rs 5000, and
+                            it was successfully withdrawn to my bank account. I'll keep playing it. So great.
+                        </p>
+                        <div class="game-user">
+                            <img src="images/ic_avatar1.png" />
+                        </div>
+                    </div>
+                    <div class="flex align-items-end justify-content-center game-review-card-square">
+                        <h4>
+                            - Durga Chopra
+                        </h4>
+                    </div>
+                </div>
+                <div class="game-review-card">
+                    <div class="game-review-card-circle">
+                        <p>
+                            This game deserves five stars, because I won a lot of money these days, about Rs 5000, and
+                            it was successfully withdrawn to my bank account. I'll keep playing it. So great.
+                        </p>
+                        <div class="game-user">
+                            <img src="images/ic_avatar2.png" />
+                        </div>
+                    </div>
+                    <div class="flex align-items-end justify-content-center game-review-card-square">
+                        <h4>
+                            - Durga Chopra
+                        </h4>
+                    </div>
+                </div>
+                <div class="game-review-card">
+                    <div class="game-review-card-circle">
+                        <p>
+                            This game deserves five stars, because I won a lot of money these days, about Rs 5000, and
+                            it was successfully withdrawn to my bank account. I'll keep playing it. So great.
+                        </p>
+                        <div class="game-user">
+                            <img src="images/ic_avatar3.png" />
+                        </div>
+                    </div>
+                    <div class="flex align-items-end justify-content-center game-review-card-square">
+                        <h4>
+                            - Durga Chopra
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container flex">
+            <img class="nav-logo" src="images/logo.png" alt="logo of rummy">
+            <div class="footer-items">
+                <ul class="list-unstyled flex cert-icons">
+                    <li>
+                        <img src="images/Untitled.png" />
+                    </li>
+                    <li>
+                        <img src="images/Untitled.png" />
+                    </li>
+                    <li>
+                        <img src="images/Untitled.png" />
+                    </li>
+                    <li>
+                        <img src="images/Untitled.png" />
+                    </li>
+                    <li>
+                        <img src="images/Untitled.png" />
+                    </li>
+                </ul>
+                <h4>
+                    Qulck links
+                </h4>
+                <ul class="list-unstyled flex quick-links gap-5">
+                    <li>
+                        About Us
+                    </li>
+                    <li>
+                        Privacy Policy
+                    </li>
+                    <li>
+                        Contact Us
+                    </li>
+                    <li>
+                        Terms & Conditions
+                    </li>
+                    <li>
+                        Refunds Cancellations
+                    </li>
+                    <li>
+                        Legally
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="second-footer">
+        © 2022 Selamat Technologies Private Limited | All Rights Reserved
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
