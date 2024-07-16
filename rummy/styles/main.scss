@@ -87,28 +87,9 @@ html {
   & h3 {
     font-size: $font-size-md;
   }
-  & .container {
+  & p {
     @include respond-to("medium") {
-      flex-direction: column;
-    }
-  }
-  & .about-item {
-    @include respond-to("medium") {
-      margin: auto;
-      border-bottom: 1px solid $gray;
-      width: calc(100% - 2rem);
-      text-align: center;
-      justify-content: center;
-    }
-    & > div {
-      @include respond-to("medium") {
-        text-align: center;
-      }
-    }
-    &:last-child {
-      @include respond-to("medium") {
-        border: 0;
-      }
+      display: none;
     }
   }
 }
@@ -118,20 +99,12 @@ html {
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-  @include respond-to("small") {
-    background-color: rgba($primaryLight, 0.125);
-    padding: 0.5rem 0;
-    margin-bottom: 1rem;
-  }
   & span {
     display: inline-block;
     padding-left: 100%;
     animation: marquee 35s linear infinite;
     color: $red;
     margin: 2rem 0;
-    @include respond-to("small") {
-      margin: 0;
-    }
   }
   &:hover {
     & span {
@@ -274,9 +247,6 @@ html {
     border-radius: 1rem;
     & img {
       width: 100%;
-      height: 20rem;
-      object-fit: cover;
-      border-radius: 1rem;
     }
     & h5 {
       font-size: $font-size-md;
@@ -317,20 +287,8 @@ html {
     }
     & .why-card {
       margin-bottom: 2rem;
-      @include respond-to("small") {
-        padding-bottom: 2rem;
-        border-bottom: 1px solid $gray;
-        margin-bottom: 0;
-      }
-      &:last-child {
-        @include respond-to("small") {
-          border-bottom: 0;
-        }
-      }
       & img {
-        height: 10rem;
-        border-radius: 0.5rem;
-        object-fit: cover;
+        width: 100%;
       }
     }
     & h4 {
@@ -344,9 +302,6 @@ html {
   }
   & h2 {
     margin: 2rem 0;
-    @include respond-to("medium") {
-      margin: 2rem 0 1rem;
-    }
   }
 }
 
@@ -370,9 +325,6 @@ html {
   }
   & .game-review-card {
     margin-bottom: 2.5rem;
-    @include respond-to("medium") {
-      margin-bottom: 0;
-    }
     & .game-review-card-circle {
       width: 11.5rem;
       height: 11.5rem;
@@ -383,12 +335,6 @@ html {
       position: relative;
       z-index: 3;
       padding: 5rem;
-      @include respond-to("medium") {
-        width: calc(100% - 6rem);
-        height: auto;
-        border-radius: 1rem;
-        padding: 2rem;
-      }
       &:after {
         content: "";
         position: absolute;
@@ -399,13 +345,6 @@ html {
         top: -1.125rem;
         left: -1.125rem;
         z-index: 1;
-        @include respond-to("medium") {
-          width: calc(100% + 3rem);
-          height: calc(100% + 3rem);
-          top: -1.5rem;
-          left: -1.5rem;
-          border-radius: 1.5rem;
-        }
       }
       & .game-user {
         width: 6.5rem;
@@ -417,12 +356,6 @@ html {
         background-color: red;
         border: 1rem solid $light;
         z-index: 2;
-        @include respond-to("medium") {
-          width: 2.5rem;
-          height: 2.5rem;
-          left: 1rem;
-          bottom: -6rem;
-        }
         & img {
           width: 100%;
           height: 100%;
@@ -437,19 +370,8 @@ html {
       margin: -5rem auto 0;
       position: relative;
       z-index: 2;
-      @include respond-to("medium") {
-        border-radius: 1rem;
-        
-      }
       & h4 {
         padding-bottom: 2.5rem;
-        @include respond-to("medium") {
-          padding-right: 1rem;
-        }
-      }
-      @include respond-to("medium") {
-        width: calc(100% - 2rem);
-        justify-content: flex-end;
       }
     }
     & p {
@@ -465,9 +387,8 @@ footer {
   & .nav-logo {
     height: 7.5rem;
     @include respond-to("medium") {
-      width: auto;
+      width: max-content;
       margin: 0 auto 2.5rem;
-      height: 5rem;
     }
   }
   & .footer-items {
@@ -485,9 +406,6 @@ footer {
       }
       & img {
         height: 3.5rem;
-        @include respond-to("medium") {
-          height: 2.5rem;
-        }
       }
     }
     & h4 {
@@ -496,7 +414,6 @@ footer {
     & .quick-links {
       @include respond-to("medium") {
         justify-content: center;
-        flex-direction: column;
       }
       & li {
         font-size: $font-size-sm;
