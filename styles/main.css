@@ -984,8 +984,9 @@ footer .nav-logo {
 }
 @media (max-width: 768px) {
   footer .nav-logo {
-    width: max-content;
+    width: auto;
     margin: 0 auto 2.5rem;
+    height: 5rem;
   }
 }
 footer .footer-items {
@@ -1016,6 +1017,7 @@ footer .footer-items h4 {
 @media (max-width: 768px) {
   footer .footer-items .quick-links {
     justify-content: center;
+    flex-direction: column;
   }
 }
 footer .footer-items .quick-links li {

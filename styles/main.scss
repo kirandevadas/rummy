@@ -387,8 +387,9 @@ footer {
   & .nav-logo {
     height: 7.5rem;
     @include respond-to("medium") {
-      width: max-content;
+      width: auto;
       margin: 0 auto 2.5rem;
+      height: 5rem;
     }
   }
   & .footer-items {
@@ -414,6 +415,7 @@ footer {
     & .quick-links {
       @include respond-to("medium") {
         justify-content: center;
+        flex-direction: column;
       }
       & li {
         font-size: $font-size-sm;
