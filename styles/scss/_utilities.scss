@@ -1,0 +1,162 @@
+// Margin Utilities
+@mixin margin-utils($direction) {
+  @for $i from 1 through 10 {
+    .m#{$direction}-#{$i} {
+      margin-#{$direction}: $i * 0.25rem;
+    }
+  }
+}
+
+// Generate margin utility classes
+@include margin-utils('t');  // mt-*
+@include margin-utils('r');  // mr-*
+@include margin-utils('b');  // mb-*
+@include margin-utils('l');  // ml-*
+@include margin-utils('x');  // mx-* (left and right)
+@include margin-utils('y');  // my-* (top and bottom)
+
+// Manual Margin Utilities (for all sides)
+@for $i from 1 through 10 {
+  .m-#{$i} {
+    margin: $i * 0.25rem;
+  }
+}
+
+// Manual Padding Utilities
+@for $i from 1 through 10 {
+  .p-#{$i} {
+    padding: $i * 0.25rem;
+  }
+}
+
+// Manual Gap Utilities
+@for $i from 1 through 10 {
+  .gap-#{$i} {
+    gap: $i * 0.25rem;
+  }
+}
+
+// Flex Utilities
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; /* Adjust as needed */
+  padding-left: 1rem; /* Optional: Add padding for content inside container */
+  padding-right: 1rem; /* Optional: Add padding for content inside container */
+  
+  @media (max-width: 768px) {
+    padding-left: 0.5rem; /* Adjust padding for smaller screens */
+    padding-right: 0.5rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@mixin flex-utils($property, $values) {
+  @each $value, $css-value in $values {
+    .#{$property}-#{$value} {
+      #{$property}: #{$css-value};
+    }
+  }
+}
+
+// Flex Container
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+// Direction
+@include flex-utils('flex-direction', (
+  row: row,
+  'row-reverse': row-reverse,
+  column: column,
+  'column-reverse': column-reverse
+));
+
+// Wrap
+@include flex-utils('flex-wrap', (
+  nowrap: nowrap,
+  wrap: wrap,
+  'wrap-reverse': wrap-reverse
+));
+
+// Justify Content
+@include flex-utils('justify-content', (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly
+));
+
+// Align Items
+@include flex-utils('align-items', (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch
+));
+
+// Align Content
+@include flex-utils('align-content', (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  stretch: stretch
+));
+
+// Align Self
+@include flex-utils('align-self', (
+  auto: auto,
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch
+));
+
+// Flex Grow
+@include flex-utils('flex-grow', (
+  0: 0,
+  1: 1
+));
+
+// Flex Shrink
+@include flex-utils('flex-shrink', (
+  0: 0,
+  1: 1
+));
+
+// Flex Basis
+@include flex-utils('flex-basis', (
+  auto: auto,
+  0: 0%,
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+));
+
+// Order
+@include flex-utils('order', (
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  first: -1,
+  last: 6
+));
+
+// List Unstyled
+.list-unstyled {
+  list-style: none;
+}
