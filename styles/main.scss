@@ -30,7 +30,7 @@ html {
       height: 2rem;
       width: 2rem;
       & * {
-      fill: $light;
+        fill: $light;
       }
     }
     @include respond-to("medium") {
@@ -440,7 +440,6 @@ html {
       z-index: 2;
       @include respond-to("medium") {
         border-radius: 1rem;
-        
       }
       & h4 {
         padding-bottom: 2.5rem;
@@ -524,4 +523,165 @@ footer {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.richrummy {
+  font-family: $fontSecondary;
+  & .nav {
+    padding: 2rem 0;
+    background-color: $light;
+    & img {
+      height: 3.2rem;
+      margin-right: 0.5rem;
+    }
+    & .nav-links {
+      font-weight: 700;
+      & li {
+        color: $primaryLight;
+        &:hover {
+          color: #fcaf3b;
+        }
+      }
+    }
+  }
+  & .banner {
+    height: calc(100dvh - 6.5rem);
+    background-size: cover;
+    background-image: url("../images/bg1.png");
+    position: relative;
+    &:before {
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: rgba($primary, 0.35);
+    }
+    & .container {
+      z-index: 2;
+      position: relative;
+      color: $light;
+      text-align: center;
+      & h4 {
+        font-weight: 400;
+        font-size: $font-size-lg;
+      }
+      & .primary-btn {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+  & .primary-btn {
+    background-color: $primaryLight;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    border: 0;
+    color: $light;
+    font-size: $font-size-lg;
+  }
+  & .secondary-btn {
+    background-color: #fcaf3b;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    border: 0;
+    color: $primary;
+    font-size: $font-size-lg;
+  }
+  & .about-section {
+    background-color: #f2f2f2;
+    & .about-card {
+      text-align: center;
+      padding: 5.75rem 0;
+      & .about-icon {
+        width: 6.5rem;
+        height: 6.5rem;
+        background-color: #fcaf3b;
+        border-radius: 50%;
+        margin: auto;
+        & svg {
+          height: 2.75rem;
+          width: 2.75rem;
+        }
+      }
+      & h3 {
+        margin: 0.75rem 0 1.25rem;
+        color: rgba($primaryLight, 0.85);
+        font-size: $font-size-xl;
+        font-weight: 500;
+      }
+      & p {
+        color: rgba($primaryLight, 0.75);
+        max-width: 20rem;
+        margin: auto;
+      }
+    }
+  }
+  & .intro {
+    padding: 7.5rem 0;
+    & img {
+      width: 50%;
+    }
+    & h2 {
+      font-size: $font-size-4xl;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    & p {
+      margin: 1.5rem 0 2.5rem;
+    }
+    & .intro-content {
+      max-width: 45%;
+      padding: 0 5rem 0 2.5rem;
+      flex-direction: column;
+      & .secondary-btn {
+        max-width: fit-content;
+      }
+    }
+  }
+  & .content-home {
+    background-color: #fcaf3b;
+    padding: 5rem 0;
+    color: $light;
+    & h2 {
+      margin-bottom: 1.25rem;
+    }
+    & p {
+      margin-bottom: 1.5rem;
+      max-width: 50rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  & .why-rummy {
+    background-color: $primary;
+    text-align: center;
+    color: $light;
+    padding: 5rem 0;
+    & h1 {
+      margin-bottom: 2.5rem;
+      font-size: $font-size-4xl;
+    }
+    & p {
+      margin-bottom: 2.5rem;
+    }
+  }
+  footer {
+    background-color: transparent;
+    padding: 0;
+    margin-top: 0;
+    & .second-footer {
+      border-bottom: 5px solid red;
+      padding: 2.5rem 0;
+      margin-top: 0;
+      background-color: $light;
+      color: rgba($primaryLight, 0.5);
+    }
+    & .primary-footer {
+      background-color: #2e2e2e;
+      padding: 2.5rem 0;
+      color: $light;
+    }
+  }
 }
